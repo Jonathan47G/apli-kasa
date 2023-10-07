@@ -1,1 +1,17 @@
-/*# sourceMappingURL=footer.css.map */
+footer {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+footer .kasa-logo-footer {
+  margin-top: 70px;
+  filter: brightness(3);
+  width: 130px;
+}
+footer p {
+  color: #fff;
+  margin-bottom: 25px;
+}/*# sourceMappingURL=footer.css.map */

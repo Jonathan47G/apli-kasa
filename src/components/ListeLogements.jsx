@@ -1,25 +1,13 @@
-import ListeLogementJSON from "../datas/listeDeLogement.json";
+import ListeLogement from "../datas/listeDeLogement.json";
+console.log(ListeLogement);
 
-const listeLogementObjet = JSON.parse(ListeLogementJSON);
-
-function ListeDeLogements() {
-  const LogementUniqueId = listeLogementObjet.reduce(
-    (acc, logement) =>
-      acc.includes(logement.id) ? acc : acc.concat(logement.id),
-    []
-  );
-  console.log(listeLogementObjet);
+function CreationListeDeLogement() {
   return (
     <div>
-      <ul>
-        {LogementUniqueId.map((id) => (
-          <li key={id}>{id}</li>
-        ))}
-      </ul>
       <ul className="lmj-plant-list">
-        {listeLogementObjet.map((logement) => (
+        {ListeLogement.map((logement) => (
           <li key={logement.id} className="card-logement">
-            {logement.name}
+            {logement.host.name}<img src={logement.cover} alt="couverture appartement"/>
           </li>
         ))}
       </ul>
@@ -27,4 +15,4 @@ function ListeDeLogements() {
   );
 }
 
-export default ListeDeLogements;
+export default CreationListeDeLogement;
