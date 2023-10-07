@@ -1,0 +1,49 @@
+.header__principal {
+  margin: 45px 60px 50px 60px;
+  &__navLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .nav-bar {
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
+      a {
+        color: #ff6060;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .kasa-logo {
+      height: 60px;
+    }
+  }
+  &__banniere {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    .banner-image {
+      z-index: -1;
+      position: absolute;
+      border-radius: 25px;
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 55%;
+      filter: brightness(75%);
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
