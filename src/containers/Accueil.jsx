@@ -5,8 +5,8 @@ function Accueil() {
   return (
     <>
       <Banniere ShowImage={true} />
-      <Footer />
       <CreationListeDeLogement />
+      <Footer />   
     </>
   );
 }

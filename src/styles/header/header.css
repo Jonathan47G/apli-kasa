@@ -6,17 +6,20 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.header__principal__navLogo .nav-bar ul {
+.header__principal__navLogo #nav-bar ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 50px;
 }
-.header__principal__navLogo .nav-bar a {
+.header__principal__navLogo #nav-bar a {
   color: #ff6060;
   text-decoration: none;
 }
-.header__principal__navLogo .nav-bar a:hover {
+.header__principal__navLogo #nav-bar a:hover {
+  text-decoration: underline;
+}
+.header__principal__navLogo #nav-bar a.active {
   text-decoration: underline;
 }
 .header__principal__navLogo .kasa-logo {

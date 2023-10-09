@@ -2,7 +2,7 @@ import Banniere from "../components/Header";
 
 function APropos() {
   return (
-   <Banniere ShowImage={false} />
+   <Banniere ShowImageApropos={true} />
    );
 }
 

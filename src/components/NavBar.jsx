@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function BarreDeNavigation({ ShowImage }) {
   return (
-    <nav className="nav-bar">
+    <nav id="nav-bar">
       <ul>
         <li>
-          <Link to="/">Accueil</Link>
+          <NavLink to="/">Accueil</NavLink>
         </li>
         <li>
-          <Link to="/a-propos">A Propos</Link>
+          <NavLink to="/a-propos">A Propos</NavLink>
         </li>
       </ul>
     </nav>

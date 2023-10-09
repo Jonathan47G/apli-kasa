@@ -1,0 +1,31 @@
+#slider__logement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+}
+#slider__logement .slider__logement__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#slider__logement .slider__logement__fleche {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+#slider__logement .slider__logement__fleche-droit {
+  margin-right: 25px;
+}
+#slider__logement .slider__logement__fleche-gauche {
+  margin-left: 25px;
+}/*# sourceMappingURL=detailLogement.css.map */
