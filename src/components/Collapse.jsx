@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import iconClosed from "../assets/fleche-haut.svg";
+import iconOpen from "../assets/fleche-bas.svg";
 
-function Collapse({ titre, contenu }) {
+function Collapse({ titre, contenu, maxHeight }) {
   // État local pour suivre si la section est ouverte ou fermée
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,14 +11,32 @@ function Collapse({ titre, contenu }) {
     setIsOpen(!isOpen);
   };
 
+  const contentStyle = {
+    maxHeight: isOpen ? maxHeight : 0, // Appliquez la valeur de maxHeight lorsque le composant est ouvert
+    overflow: 'hidden',
+    transition: 'max-height 500ms ease-in-out',
+  };
+
   return (
-    <div className="collapse">
+    <div className={`collapse ${isOpen ? "open" : "closed"}`}>
       {/* Bouton pour basculer l'état */}
-      <button onClick={toggleCollapse} className="collapse-button">
+      <button onClick={toggleCollapse} className="collapse__button">
         {titre}
+        <span className="icon">
+          <img
+            src={isOpen ? iconOpen : iconClosed}
+            alt={isOpen ? "Ouvert" : "Fermé"}
+          />
+        </span>
       </button>
       {/* Rendu conditionnel du contenu en fonction de l'état isOpen */}
-      {isOpen && <div className="collapse-content">{contenu}</div>}
+
+        <div
+          className={`collapse__button__content ${isOpen ? "open" : "closed"}`}
+          style= {contentStyle}
+        >
+          {contenu}
+        </div>
     </div>
   );
 }

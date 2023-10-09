@@ -1,3 +1,5 @@
+@import "../variable-mixin/variable-mixin.scss";
+
 a,
 ul,
 p,
@@ -6,12 +8,35 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.collapse {
+  background-color: $couleurConteneur;
+  &__button {
+    padding:  7px;
+    background-color: $couleurPrincipal;
+    border: none;
+    color: $couleurPoliceSec;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+      color: $couleurPolicePrim;
+      font-weight: 400;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
 }

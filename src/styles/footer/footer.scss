@@ -1,5 +1,7 @@
+@import '../variable-mixin/variable-mixin.scss';
+
 footer {
-  background-color: #000;
+  background-color: $couleurFooter;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,12 +10,12 @@ footer {
 
   .kasa-logo-footer {
     margin-top: 70px;
-
     filter: brightness(3);
     width: 130px;
   }
+  
   p {
-    color: #fff;
+    color: $couleurPoliceSec;
     margin-bottom: 25px;
   }
 }

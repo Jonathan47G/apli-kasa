@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import ListeLogement from '../datas/listeDeLogement.json';
-import '../styles/listeLogement/listeLogement.scss'
+
 
 function CreationListeDeLogement() {
   const ListeLogementFiltre = ListeLogement.reduce((accumulateur, logement) => { 
