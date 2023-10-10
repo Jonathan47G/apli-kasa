@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Structure/Header";
 import Footer from "../components/Structure/Footer";
-import RecuperationDesIdLogementEtLesGenere from "../components/Fonctionnel/RecuperationLogement";
+import GenerationDeLaPageLogement from "../components/Structure/GenerationDuLogement";
 import "../styles/detailLogement/detailLogement.scss"
 
 function DetailLogement() {
@@ -9,7 +9,7 @@ function DetailLogement() {
     
     <>
       <Header  />
-      <RecuperationDesIdLogementEtLesGenere />
+      <GenerationDeLaPageLogement />
       <Footer />
     </>
   );
