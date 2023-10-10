@@ -1,0 +1,23 @@
+@import '../variable-mixin/variable-mixin.scss';
+
+.conteneur__404 {
+    color : $couleurPolicePrim;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    h2 {
+        margin-top: 0;
+        font-size: 290px;
+    }
+    p {
+        margin-top: -250px;
+        font-size: 36px;
+    }
+    a {
+        margin-top: 100px;
+        color : $couleurPolicePrim;
+        margin-bottom: 100px;
+    }
+}

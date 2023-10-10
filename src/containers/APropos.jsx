@@ -53,7 +53,7 @@ function APropos() {
               des ateliers sur la sécurité domestique pour nos hôtes.
             </p>
           }
-          maxHeight={"70px"}
+          maxHeight={"73px"}
         />
       </div>
     </>

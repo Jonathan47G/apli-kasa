@@ -2,16 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import "../styles/detailLogement/detailLogement.scss"
+import "../styles/Page404/page404.scss"
 
 function Erreur404() {
   return (
     
     <>
       <Header  />
-      <p>404</p>
+      <div className="conteneur__404">
+      <h2>404</h2>
       <p>Oups! La page que vous demandez n'existe pas.</p>
       <Link to="/" >Retourner sur la page d’accueil</Link>
+      </div>
       <Footer />
     </>
   );
