@@ -1,6 +1,7 @@
 import React from "react";
-import GenerationDuSlider from "./Slider";
-import RecuperationDeIdActuel from "./RecuperationIdDeLaPage"
+import GenerationDuSlider from "../Structure/Slider";
+import RecuperationDeIdActuel from "./RecuperationIdDeLaPage";
+import GenerationDesTags from "./GenererTag";
 
 function RecuperationDesIdLogementEtLesGenere() {
   const logement = RecuperationDeIdActuel();
@@ -9,7 +10,7 @@ function RecuperationDesIdLogementEtLesGenere() {
     <>
       <article>
         <div><GenerationDuSlider /></div>
-        <p>{logement.description}</p>
+        <GenerationDesTags />
       </article>
     </>
   );

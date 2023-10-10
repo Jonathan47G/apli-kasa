@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import RecuperationDesIdLogementEtLesGenere from "../components/RecuperationLogement";
+import Header from "../components/Structure/Header";
+import Footer from "../components/Structure/Footer";
+import RecuperationDesIdLogementEtLesGenere from "../components/Fonctionnel/RecuperationLogement";
 import "../styles/detailLogement/detailLogement.scss"
 
 function DetailLogement() {

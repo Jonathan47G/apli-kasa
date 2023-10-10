@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import ListeLogement from "../datas/listeDeLogement.json"; 
+import ListeLogement from "../../datas/listeDeLogement.json"; 
 
 function RecuperationDeIdActuel (){
     const { id } = useParams(); // Extrait l'ID du logement de l'URL

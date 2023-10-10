@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Structure/Header";
+import Footer from "../components/Structure/Footer";
 import "../styles/Page404/page404.scss"
 
 function Erreur404() {

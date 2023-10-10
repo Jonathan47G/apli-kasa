@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ListeLogement from '../datas/listeDeLogement.json';
+import ListeLogement from '../../datas/listeDeLogement.json';
 
 
 function CreationListeDeLogement() {

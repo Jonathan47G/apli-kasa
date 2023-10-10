@@ -1,8 +1,8 @@
 import NavBar from "./NavBar";
-import Logo from "../assets/Logo.svg";
-import BackgroundBanner from "../assets/BackgroundBanner.png";
-import BackgroundBannerApropos from "../assets/BackgroundBannerApropos.png";
-import "../styles/header/header.scss";
+import Logo from "../../assets/Logo.svg";
+import BackgroundBanner from "../../assets/BackgroundBanner.png";
+import BackgroundBannerApropos from "../../assets/BackgroundBannerApropos.png";
+import "../../styles/header/header.scss";
 
 function Banniere({ ShowImage, ShowImageApropos }) {
   return (

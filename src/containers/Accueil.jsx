@@ -1,8 +1,8 @@
 import React from "react";
-import Banniere from "../components/Header";
-import Footer from "../components/Footer";
-import CreationListeDeLogement from "../components/ListeLogements";
-import '../styles/Accueil/accueil.scss';
+import Banniere from "../components/Structure/Header";
+import Footer from "../components/Structure/Footer";
+import CreationListeDeLogement from "../components/Structure/ListeLogements";
+import '../styles/Accueil/accueil.scss'
 
 function Accueil() {
   return (

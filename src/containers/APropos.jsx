@@ -1,6 +1,7 @@
 import React from "react";
-import Banniere from "../components/Header";
-import Collapse from "../components/Collapse";
+import Banniere from "../components/Structure/Header";
+import Collapse from "../components/Fonctionnel/Collapse";
+import Footer from "../components/Structure/Footer"
 import "../styles/a-propos/a-propos.scss";
 
 function APropos() {
@@ -56,6 +57,7 @@ function APropos() {
           maxHeight={"73px"}
         />
       </div>
+      <Footer />
     </>
   );
 }
