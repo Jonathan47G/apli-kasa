@@ -3,43 +3,79 @@ import GenerationDuSlider from "./Slider";
 import RecuperationDeIdActuel from "../Fonctionnel/RecuperationIdDeLaPage";
 import GenerationDonneeJson from "../Fonctionnel/GenerationDonneeLogement";
 import Collapse from "../Fonctionnel/Collapse";
+import GenerationEtoile from "../Fonctionnel/generationEtoile";
 
 function GenerationDeLaPageLogement() {
   const logement = RecuperationDeIdActuel();
   const noteDuLogement = logement.rating;
   const titreDuLogement = logement.title;
+  const localisationDuLogement = logement.location;
   const tagDuLogement = logement.tags;
   const equipmentDuLogement = logement.equipments;
   const nomHote = logement.host.name;
   const imageHote = logement.host.picture;
   const descriptionDuLogement = logement.description;
-
+  const noteParse = parseInt(noteDuLogement);
   return (
-    <article>
-      <GenerationDonneeJson dataJson={titreDuLogement} className="titre" />
-      <div>
-        <GenerationDonneeJson dataJson={nomHote} className="nom-host" />
-        <img src={imageHote} alt={`Appartement de ${nomHote}`} />
+    <article className="detail__logement">
+      <GenerationDuSlider />
+      <div className="detail__logement__entete">
+        <div className="detail__logement__entete__titre-localisation">
+          <GenerationDonneeJson
+            dataJson={titreDuLogement}
+            className="titre"
+            balise="h3"
+          />
+          <GenerationDonneeJson
+            dataJson={localisationDuLogement}
+            className="localisation"
+            balise="p"
+          />
+        </div>
+        <div className="detail__logement__entete__hote">
+          <GenerationDonneeJson
+            dataJson={nomHote}
+            className="nom-hote"
+            balise="p"
+          />
+          <img
+            className="image-hote"
+            src={imageHote}
+            alt={`Appartement de ${nomHote}`}
+          />
+        </div>
       </div>
-      <GenerationDonneeJson dataJson={tagDuLogement} className="liste-tag" />
-      <div>
-        <GenerationDonneeJson dataJson={noteDuLogement} className="rating" />
+      <div className="detail__logement__tag-note">
+        <GenerationDonneeJson
+          dataJson={tagDuLogement}
+          className="detail__logement__tag"
+        />
+        <div className="detail__logement__note">
+          <GenerationEtoile note={noteParse} />
+        </div>
       </div>
-      <Collapse
+      <div className="detail__logement__collapse">
+        <Collapse
           titre="Description"
           contenu={
-            <GenerationDonneeJson dataJson={descriptionDuLogement} className="description" />
+            <GenerationDonneeJson
+              dataJson={descriptionDuLogement}
+              className="detail__logement__description"
+            />
           }
-          maxHeight={"70px"}
-        />
-      <Collapse
+          maxHeight={"80px"}
+        /> 
+        <Collapse
           titre="Équipements"
           contenu={
-            <GenerationDonneeJson dataJson={equipmentDuLogement} className="liste-equipment" />
+            <GenerationDonneeJson
+              dataJson={equipmentDuLogement}
+              className="detail__logement__equipment"
+            />
           }
           maxHeight={"200px"}
         />
-      
+      </div>
     </article>
   );
 }

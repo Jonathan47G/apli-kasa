@@ -1,0 +1,41 @@
+#slider__logement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 440px;
+  position: relative;
+}
+#slider__logement .slider__logement__img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#slider__logement .slider__logement__img.active {
+  display: block;
+}
+#slider__logement .slider__logement__fleche {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+}
+#slider__logement .slider__logement__fleche-droit {
+  margin-right: 25px;
+}
+#slider__logement .slider__logement__fleche-gauche {
+  margin-left: 25px;
+}
+#slider__logement .slider__logement__compteur {
+  z-index: 1;
+  color: #fff;
+  position: absolute;
+  bottom: 25px;
+}/*# sourceMappingURL=slider.css.map */

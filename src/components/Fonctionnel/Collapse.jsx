@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import iconClosed from "../../assets/fleche-haut.svg";
-import iconOpen from "../../assets/fleche-bas.svg";
+import iconFerme from "../../assets/fleche-haut.svg";
+import iconOuvert from "../../assets/fleche-bas.svg";
 
 function Collapse({ titre, contenu, maxHeight }) {
   // État local pour suivre si la section est ouverte ou fermée
@@ -11,7 +11,7 @@ function Collapse({ titre, contenu, maxHeight }) {
     setIsOpen(!isOpen);
   };
 
-  const contentStyle = {
+  const stylePourLeContenu = {
     maxHeight: isOpen ? maxHeight : 0, // Appliquez la valeur de maxHeight lorsque le composant est ouvert
     overflow: 'hidden',
     transition: 'max-height 500ms ease-in-out',
@@ -24,7 +24,7 @@ function Collapse({ titre, contenu, maxHeight }) {
         {titre}
         <span className="icon">
           <img
-            src={isOpen ? iconOpen : iconClosed}
+            src={isOpen ? iconOuvert : iconFerme}
             alt={isOpen ? "Ouvert" : "Fermé"}
           />
         </span>
@@ -33,7 +33,7 @@ function Collapse({ titre, contenu, maxHeight }) {
 
         <div
           className={`collapse__button__content ${isOpen ? "open" : "closed"}`}
-          style= {contentStyle}
+          style= {stylePourLeContenu}
         >
           {contenu}
         </div>

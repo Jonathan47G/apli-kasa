@@ -1,0 +1,41 @@
+@import "../variable-mixin/variable-mixin.scss";
+
+#slider__logement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 440px;
+    position: relative;
+    .slider__logement__img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: none;
+        object-fit: cover;
+        object-position: center;
+        &.active {
+           display: block
+        }
+    }
+    .slider__logement__fleche {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        z-index: 1;
+        &-droit {
+            margin-right: 25px;
+        }
+        &-gauche {
+            margin-left: 25px;
+        }
+    }
+    .slider__logement__compteur {
+        z-index: 1;
+        color : $couleurPoliceSec;
+        position: absolute;
+        bottom: 25px;
+    }
+}
