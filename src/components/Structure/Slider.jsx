@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RecuperationDeIdActuel from "../Fonctionnel/RecuperationIdDeLaPage";
+import RecuperationDeIdActuel from "../Fonctionnel/TrouverIdLogement";
 import FlecheDroit from "../../assets/Fleche-droit.svg";
 import FlecheGauche from "../../assets/Fleche-gauche.svg";
 import "../../styles/slider/slider.scss"

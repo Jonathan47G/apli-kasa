@@ -1,12 +1,11 @@
 import React from "react";
 import GenerationDuSlider from "./Slider";
-import RecuperationDeIdActuel from "../Fonctionnel/RecuperationIdDeLaPage";
-import GenerationDonneeJson from "../Fonctionnel/GenerationDonneeLogement";
+import TrouverIdLogement from "../Fonctionnel/TrouverIdLogement";
+import GenerationDonneeJson from "../Fonctionnel/GenerationDonneeJson";
 import Collapse from "../Fonctionnel/Collapse";
 import GenerationEtoile from "../Fonctionnel/generationEtoile";
-
 function GenerationDeLaPageLogement() {
-  const logement = RecuperationDeIdActuel();
+  const logement = TrouverIdLogement();
   const noteDuLogement = logement.rating;
   const titreDuLogement = logement.title;
   const localisationDuLogement = logement.location;
@@ -16,6 +15,7 @@ function GenerationDeLaPageLogement() {
   const imageHote = logement.host.picture;
   const descriptionDuLogement = logement.description;
   const noteParse = parseInt(noteDuLogement);
+  
   return (
     <article className="detail__logement">
       <GenerationDuSlider />
@@ -79,5 +79,6 @@ function GenerationDeLaPageLogement() {
     </article>
   );
 }
+
 
 export default GenerationDeLaPageLogement;

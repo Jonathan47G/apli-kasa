@@ -10,6 +10,7 @@ function CreationListeDeLogement() {
       accumulateur.push(logement);
     }
     return accumulateur;
+    
   }, []);
 
     return (
@@ -20,7 +21,7 @@ function CreationListeDeLogement() {
               <figcaption>{logement.title}</figcaption><img src={logement.cover} alt="couverture appartement"/>
               </article></Link></li>
           ))}
-        </ul>
+        </ul> 
       </section>
     );
 }

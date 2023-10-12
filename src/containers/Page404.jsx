@@ -1,10 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, {useEffect} from "react";
+import { Link, useNavigate  } from "react-router-dom";
 import Header from "../components/Structure/Header";
 import Footer from "../components/Structure/Footer";
 import "../styles/Page404/page404.scss"
 
-function Erreur404() {
+  function Erreur404() {
+    const navigate = useNavigate();
+
+  useEffect(() => {
+    const delaiRedirection = 5000; // 5 secondes
+
+    const redirectionTimer = setTimeout(() => {
+      navigate("/");
+    }, delaiRedirection);
+
+    return () => {
+      clearTimeout(redirectionTimer);
+    };
+  }, [navigate]);
   return (
     
     <>
