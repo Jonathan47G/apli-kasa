@@ -1,0 +1,9 @@
+@mixin appareil ($breakpoint) { //the name of the mixin is devices
+  
+    @if $breakpoint == mobile {    
+    @media only screen and (max-width: 770px) {
+      @content;
+    }
+  }
+ 
+}

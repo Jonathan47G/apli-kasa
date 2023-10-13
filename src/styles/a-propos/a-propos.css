@@ -7,8 +7,22 @@
   align-items: center;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 770px) {
+  .conteneur__collapseApropos {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 .conteneur__collapseApropos .collapse {
-  width: 80%;
+  width: 90%;
+}
+@media only screen and (max-width: 770px) {
+  .conteneur__collapseApropos .collapse {
+    width: 100%;
+    margin: auto;
+  }
 }
 .conteneur__collapseApropos .collapse__button {
   width: 100%;
@@ -16,6 +30,17 @@
   height: 100%;
   font-size: 24px;
 }
+@media only screen and (max-width: 770px) {
+  .conteneur__collapseApropos .collapse__button {
+    font-size: 13px;
+  }
+}
 .conteneur__collapseApropos .collapse__button__content {
   height: 100%;
+}
+@media only screen and (max-width: 770px) {
+  .conteneur__collapseApropos .collapse__button__content {
+    font-size: 12px;
+    min-height: 100%;
+  }
 }/*# sourceMappingURL=a-propos.css.map */

@@ -6,12 +6,26 @@ footer {
   align-items: center;
   gap: 25px;
 }
+@media only screen and (max-width: 770px) {
+  footer {
+    gap: 5px;
+  }
+}
 footer .kasa-logo-footer {
-  margin-top: 70px;
+  margin-top: 60px;
   filter: brightness(3);
   width: 130px;
 }
 footer p {
+  font-size: 24px;
   color: #fff;
   margin-bottom: 25px;
+}
+@media only screen and (max-width: 770px) {
+  footer p {
+    font-size: 12px;
+    width: 133px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }/*# sourceMappingURL=footer.css.map */

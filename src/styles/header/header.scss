@@ -1,18 +1,34 @@
-@import '../variable-mixin/variable-mixin.scss';
+@import "../variable-mixin/variable-mixin.scss";
+@import "../media/media.scss";
 
 .header__principal {
   margin: 45px 60px 50px 60px;
+
+  @include appareil(mobile) {
+    margin: 10px 10px 0 10px;
+  }
   &__navLogo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
     #nav-bar {
       ul {
         list-style-type: none;
         display: flex;
         flex-direction: row;
         gap: 50px;
+        font-size: 24px;
+
+        @include appareil(mobile) {
+          font-size: 12px;
+          gap: 20px;
+          padding: 0;
+          text-transform: uppercase;
+        }
       }
+
       a {
         color: $couleurPolicePrim;
         text-decoration: none;
@@ -25,7 +41,11 @@
       }
     }
     .kasa-logo {
-      height: 60px;
+      height: 70px;
+
+      @include appareil(mobile) {
+        height: 40px;
+      }
     }
   }
   &__banniere {
@@ -35,6 +55,12 @@
     justify-content: center;
     position: relative;
     margin-top: 50px;
+
+    @include appareil(mobile) {
+      margin-top: 30px;
+      height: 120px;
+      justify-content: flex-start;
+    }
     .banner-image {
       z-index: -1;
       position: absolute;
@@ -45,10 +71,22 @@
       object-position: 50% 55%;
       filter: brightness(75%);
       box-sizing: border-box;
+
+      @include appareil(mobile) {
+        height: 100%;
+      }
     }
     h1 {
+      font-size: 48px;
       text-align: center;
       color: $couleurPoliceSec;
+
+      @include appareil(mobile) {
+        margin-left: 20px;
+        text-align: start;
+        width: 217px;
+        font-size: 24px;
+      }
     }
   }
 }

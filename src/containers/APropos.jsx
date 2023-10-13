@@ -18,7 +18,7 @@ function APropos() {
               informations sont régulièrement vérifiées par nos équipes.
             </p>
           }
-          maxHeight={"70px"}
+          maxHeight={"80px"}
         />
         <Collapse
           titre="Respect"
@@ -54,7 +54,7 @@ function APropos() {
               des ateliers sur la sécurité domestique pour nos hôtes.
             </p>
           }
-          maxHeight={"73px"}
+          maxHeight={"135px"}
         />
       </div>
       <Footer />

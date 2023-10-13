@@ -1,13 +1,18 @@
 @import '../variable-mixin/variable-mixin.scss';
+@import '../media/media.scss';
 
 .contenu__principal {
   margin: 0 60px 0 60px;
+  @include appareil(mobile) {
+    margin: 0 10px 0 10px;
+  }
 
   &__liste {
     background-color: $couleurConteneur;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, auto);
+
     grid-auto-rows: 340px;
     margin: 0;
     padding: 0;
@@ -16,6 +21,13 @@
     padding: 50px;
     border-radius: 30px;
 
+    @include appareil(mobile) {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
     .card-logement {
       border-radius: 15px;
       box-sizing: border-box;
@@ -23,8 +35,13 @@
       display: flex;
       flex-direction: column;
       width: 100%;
+      max-width: 500px;
       height: 100%;
       position: relative;
+      @include appareil(mobile) {
+        height: 260px;
+        max-width: none;
+      }
 
       &::after {
         z-index: 1;

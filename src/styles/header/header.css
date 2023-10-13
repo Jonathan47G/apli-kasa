@@ -1,16 +1,31 @@
 .header__principal {
   margin: 45px 60px 50px 60px;
 }
+@media only screen and (max-width: 770px) {
+  .header__principal {
+    margin: 10px 10px 0 10px;
+  }
+}
 .header__principal__navLogo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .header__principal__navLogo #nav-bar ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 50px;
+  font-size: 24px;
+}
+@media only screen and (max-width: 770px) {
+  .header__principal__navLogo #nav-bar ul {
+    font-size: 12px;
+    gap: 20px;
+    padding: 0;
+    text-transform: uppercase;
+  }
 }
 .header__principal__navLogo #nav-bar a {
   color: #FF6060;
@@ -23,7 +38,12 @@
   text-decoration: underline;
 }
 .header__principal__navLogo .kasa-logo {
-  height: 60px;
+  height: 70px;
+}
+@media only screen and (max-width: 770px) {
+  .header__principal__navLogo .kasa-logo {
+    height: 40px;
+  }
 }
 .header__principal__banniere {
   height: 250px;
@@ -32,6 +52,13 @@
   justify-content: center;
   position: relative;
   margin-top: 50px;
+}
+@media only screen and (max-width: 770px) {
+  .header__principal__banniere {
+    margin-top: 30px;
+    height: 120px;
+    justify-content: flex-start;
+  }
 }
 .header__principal__banniere .banner-image {
   z-index: -1;
@@ -46,7 +73,21 @@
   filter: brightness(75%);
   box-sizing: border-box;
 }
+@media only screen and (max-width: 770px) {
+  .header__principal__banniere .banner-image {
+    height: 100%;
+  }
+}
 .header__principal__banniere h1 {
+  font-size: 48px;
   text-align: center;
   color: #fff;
+}
+@media only screen and (max-width: 770px) {
+  .header__principal__banniere h1 {
+    margin-left: 20px;
+    text-align: start;
+    width: 217px;
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=header.css.map */

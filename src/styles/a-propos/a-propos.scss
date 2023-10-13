@@ -1,3 +1,5 @@
+@import '../media/media.scss';
+
 .conteneur__collapseApropos {
   width: 100%;
   display: flex;
@@ -6,18 +8,35 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  @include appareil(mobile) {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
   .collapse {
-    width: 80%;
+    width: 90%;
+    @include appareil(mobile) {
+      width: 100%;
+      margin: auto;
+    }
 
     &__button {
       width: 100%;
       text-align: start;
       height: 100%;
       font-size: 24px;
+      @include appareil(mobile) {
+        font-size: 13px;
+      }
 
       &__content {
         height: 100%;
+        @include appareil(mobile) {
+          font-size: 12px;
+          min-height: 100%;
+        }
       }
     }
   }

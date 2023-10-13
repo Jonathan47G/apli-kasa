@@ -1,0 +1,19 @@
+.collapse {
+  background-color: #F6F6F6;
+}
+.collapse__button {
+  padding: 7px;
+  background-color: #FF6060;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collapse__button__content {
+  color: #FF6060;
+  font-weight: 400;
+  padding-left: 10px;
+  padding-right: 10px;
+}/*# sourceMappingURL=collapse.css.map */

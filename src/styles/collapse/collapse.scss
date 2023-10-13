@@ -1,0 +1,24 @@
+@import "../variable-mixin/variable-mixin.scss";
+@import '../media/media.scss';
+
+.collapse {
+    background-color: $couleurConteneur;
+    &__button {
+      padding:  7px;
+      background-color: $couleurPrincipal;
+      border: none;
+      color: $couleurPoliceSec;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+  
+      &__content {
+        color: $couleurPolicePrim;
+        font-weight: 400;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }

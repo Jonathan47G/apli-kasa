@@ -20,19 +20,24 @@ function GenerationDeLaPageLogement() {
     <article className="detail__logement">
       <GenerationDuSlider />
       <div className="detail__logement__entete">
-        <div className="detail__logement__entete__titre-localisation">
+        <div className="detail__logement__entete__titre-localisation-tag">
           <GenerationDonneeJson
             dataJson={titreDuLogement}
-            className="titre"
+            className="detail__logement__entete__titre-localisation-tag__titre"
             balise="h3"
           />
           <GenerationDonneeJson
             dataJson={localisationDuLogement}
-            className="localisation"
+            className="detail__logement__entete__titre-localisation-tag__localisation"
             balise="p"
           />
+          <GenerationDonneeJson
+          dataJson={tagDuLogement}
+          className="detail__logement__entete__titre-localisation-tag__tag"
+        />
         </div>
-        <div className="detail__logement__entete__hote">
+        <div className="detail__logement__entete__hote-note">
+          <div className="detail__logement__entete__hote-note__hote">
           <GenerationDonneeJson
             dataJson={nomHote}
             className="nom-hote"
@@ -43,17 +48,13 @@ function GenerationDeLaPageLogement() {
             src={imageHote}
             alt={`Appartement de ${nomHote}`}
           />
-        </div>
-      </div>
-      <div className="detail__logement__tag-note">
-        <GenerationDonneeJson
-          dataJson={tagDuLogement}
-          className="detail__logement__tag"
-        />
-        <div className="detail__logement__note">
+          </div>
+          <div className="detail__logement__hote-note__note">
           <GenerationEtoile note={noteParse} />
         </div>
+        </div>
       </div>
+
       <div className="detail__logement__collapse">
         <Collapse
           titre="Description"
@@ -61,9 +62,10 @@ function GenerationDeLaPageLogement() {
             <GenerationDonneeJson
               dataJson={descriptionDuLogement}
               className="detail__logement__description"
+              balise="p"
             />
           }
-          maxHeight={"80px"}
+          maxHeight={"260px"}
         /> 
         <Collapse
           titre="Équipements"
@@ -71,6 +73,7 @@ function GenerationDeLaPageLogement() {
             <GenerationDonneeJson
               dataJson={equipmentDuLogement}
               className="detail__logement__equipment"
+              
             />
           }
           maxHeight={"200px"}

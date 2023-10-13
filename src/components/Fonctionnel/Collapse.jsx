@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import iconFerme from "../../assets/fleche-haut.svg";
 import iconOuvert from "../../assets/fleche-bas.svg";
+import "../../styles/collapse/collapse.scss";
 
 function Collapse({ titre, contenu, maxHeight }) {
   // État local pour suivre si la section est ouverte ou fermée

@@ -22,7 +22,7 @@ function GenerationEtoile({ note }) {
       );}
   }
 
-  return <div className="rating-stars">{etoile}</div>;
+  return <div className="detail__logement__entete__hote-note__note">{etoile}</div>;
 }
 
 export default GenerationEtoile;
