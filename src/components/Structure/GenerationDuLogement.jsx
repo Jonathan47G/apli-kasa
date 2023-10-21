@@ -1,7 +1,7 @@
 import React from "react";
 import GenerationDuSlider from "./Slider";
 import TrouverIdLogement from "../Fonctionnel/TrouverIdLogement";
-import GenerationDonneeJson from "../Fonctionnel/GenerationDonneeJson";
+import Logement from "../Fonctionnel/Logement";
 import Collapse from "../Fonctionnel/Collapse";
 import GenerationEtoile from "../Fonctionnel/generationEtoile";
 function GenerationDeLaPageLogement() {
@@ -21,24 +21,24 @@ function GenerationDeLaPageLogement() {
       <GenerationDuSlider />
       <div className="detail__logement__entete">
         <div className="detail__logement__entete__titre-localisation-tag">
-          <GenerationDonneeJson
+          <Logement
             dataJson={titreDuLogement}
             className="detail__logement__entete__titre-localisation-tag__titre"
             balise="h3"
           />
-          <GenerationDonneeJson
+          <Logement
             dataJson={localisationDuLogement}
             className="detail__logement__entete__titre-localisation-tag__localisation"
             balise="p"
           />
-          <GenerationDonneeJson
+          <Logement
           dataJson={tagDuLogement}
           className="detail__logement__entete__titre-localisation-tag__tag"
         />
         </div>
         <div className="detail__logement__entete__hote-note">
           <div className="detail__logement__entete__hote-note__hote">
-          <GenerationDonneeJson
+          <Logement
             dataJson={nomHote}
             className="nom-hote"
             balise="p"
@@ -59,7 +59,7 @@ function GenerationDeLaPageLogement() {
         <Collapse
           titre="Description"
           contenu={
-            <GenerationDonneeJson
+            <Logement
               dataJson={descriptionDuLogement}
               className="detail__logement__description"
               balise="p"
@@ -70,7 +70,7 @@ function GenerationDeLaPageLogement() {
         <Collapse
           titre="Équipements"
           contenu={
-            <GenerationDonneeJson
+            <Logement
               dataJson={equipmentDuLogement}
               className="detail__logement__equipment"
               

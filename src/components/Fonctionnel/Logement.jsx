@@ -1,4 +1,4 @@
-function GenerationDonneeJson({ dataJson, className, balise }) {
+function Logement({ dataJson, className, balise }) {
   if (typeof dataJson === 'string') {
     switch (balise) {
       case "p":
@@ -21,4 +21,4 @@ function GenerationDonneeJson({ dataJson, className, balise }) {
   }
 }
 
-  export default GenerationDonneeJson;
+  export default Logement;
