@@ -12,7 +12,7 @@ function DetailLogement() {
   // Utilisez le composant TrouverIdLogement comme une fonction pour obtenir les données du logement.
 
   if (!logement) {
-    return  <Navigate to="/error" replace={true} />
+    return  <Navigate to="*" replace={true} />
   }
 
   return (
