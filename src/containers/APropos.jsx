@@ -6,7 +6,7 @@ import "../styles/a-propos/a-propos.scss";
 
 function APropos() {
   return (
-    <>
+    <main>
       <Banniere ShowImageApropos={true} />
       <div className="conteneur__collapseApropos">
         <Collapse
@@ -58,7 +58,7 @@ function APropos() {
         />
       </div>
       <Footer />
-    </>
+    </main>
   );
 }
 

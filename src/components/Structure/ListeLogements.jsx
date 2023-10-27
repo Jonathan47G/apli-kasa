@@ -14,15 +14,15 @@ function CreationListeDeLogement() {
   }, []);
 
     return (
-      <section className="contenu__principal">
+      <main className="contenu__principal">
         <ul className="contenu__principal__liste">
           {ListeLogementFiltre.map((logement) => (
-            <li key={logement.id}><Link to={`/logements/${logement.id}`}><article className="card-logement">
+            <li key={logement.id}><Link to={`/logements/${logement.id}`}><figure className="card-logement">
               <figcaption>{logement.title}</figcaption><img src={logement.cover} alt="couverture appartement"/>
-              </article></Link></li>
+              </figure></Link></li>
           ))}
         </ul> 
-      </section>
+      </main>
     );
 }
 
