@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function BarreDeNavigation({ ShowImage }) {
+function BarreDeNavigation() {
   return (
     <nav id="nav-bar">
       <ul>

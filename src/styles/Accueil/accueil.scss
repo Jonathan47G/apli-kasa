@@ -3,6 +3,7 @@
 
 .contenu__principal {
   margin: 0 60px 0 60px;
+
   @include appareil(mobile) {
     margin: 0 10px 0 10px;
   }
@@ -12,7 +13,6 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, auto);
-
     grid-auto-rows: 340px;
     margin: 0;
     padding: 0;
@@ -38,6 +38,7 @@
       max-width: 500px;
       height: 100%;
       position: relative;
+      
       @include appareil(mobile) {
         height: 260px;
         max-width: none;

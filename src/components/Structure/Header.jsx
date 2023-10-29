@@ -4,7 +4,7 @@ import BackgroundBanner from "../../assets/BackgroundBanner.png";
 import BackgroundBannerApropos from "../../assets/BackgroundBannerApropos.png";
 import "../../styles/header/header.scss";
 
-function Banniere({ ShowImage, ShowImageApropos }) {
+function Header({ ShowImage, ShowImageApropos }) {
   return (
     <header className="header__principal">
       <div className="header__principal__navLogo">
@@ -34,4 +34,4 @@ function Banniere({ ShowImage, ShowImageApropos }) {
   );
 }
 
-export default Banniere;
+export default Header;

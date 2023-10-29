@@ -1,5 +1,5 @@
 import React from "react";
-import Banniere from "../components/Structure/Header";
+import Header from "../components/Structure/Header";
 import Collapse from "../components/Fonctionnel/Collapse";
 import Footer from "../components/Structure/Footer"
 import "../styles/a-propos/a-propos.scss";
@@ -7,7 +7,7 @@ import "../styles/a-propos/a-propos.scss";
 function APropos() {
   return (
     <main>
-      <Banniere ShowImageApropos={true} />
+      <Header ShowImageApropos={true} />
       <div className="conteneur__collapseApropos">
         <Collapse
           titre="Fiabilité"
@@ -18,7 +18,7 @@ function APropos() {
               informations sont régulièrement vérifiées par nos équipes.
             </p>
           }
-          maxHeight={"80px"}
+          maxHeight={"100px"}
         />
         <Collapse
           titre="Respect"
@@ -29,7 +29,7 @@ function APropos() {
               entraînera une exclusion de notre plateforme.
             </p>
           }
-          maxHeight={"70px"}
+          maxHeight={"100px"}
         />
         <Collapse
           titre="Service"
@@ -40,7 +40,7 @@ function APropos() {
               la moindre question.
             </p>
           }
-          maxHeight={"70px"}
+          maxHeight={"100px"}
         />
         <Collapse
           titre="Sécurité"
