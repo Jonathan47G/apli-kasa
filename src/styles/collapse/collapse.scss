@@ -1,8 +1,7 @@
 @import "../variable-mixin/variable-mixin.scss";
 @import '../media/media.scss';
 
-.collapse {
-    background-color: $couleurConteneur;
+.collapse { 
     &__button {
       padding:  7px;
       background-color: $couleurPrincipal;
@@ -13,12 +12,12 @@
       justify-content: space-between;
       align-items: center;
       
-  
       &__content {
         color: $couleurPolicePrim;
         font-weight: 400;
         padding-left: 10px;
         padding-right: 10px;
+        
       }
     }
   }

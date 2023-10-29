@@ -14,8 +14,10 @@ function Collapse({ titre, contenu, maxHeight }) {
 
   const stylePourLeContenu = {
     maxHeight: isOpen ? maxHeight : 0, // Appliquez la valeur de maxHeight lorsque le composant est ouvert
+    height : 'auto',
+    backgroundColor: '#F6F6F6',
     overflow: 'hidden',
-    transition: 'max-height 500ms ease-in-out',
+    transition: '500ms all',
   };
 
   return (
@@ -31,13 +33,12 @@ function Collapse({ titre, contenu, maxHeight }) {
         </span>
       </button>
       {/* Rendu conditionnel du contenu en fonction de l'état isOpen */}
-
-        <div
-          className={`collapse__button__content ${isOpen ? "open" : "closed"}`}
-          style= {stylePourLeContenu}
-        >
-          {contenu}
-        </div>
+      <div
+        className={`collapse__button__content ${isOpen ? "open" : "closed"}`}
+        style={stylePourLeContenu}
+      >
+        {contenu}
+      </div>
     </div>
   );
 }
